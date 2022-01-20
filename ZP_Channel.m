@@ -17,6 +17,6 @@ for a=1:N+L_C
 end
 Symbols3=zeros(N+L_C,1,Block_Num);
 for a=1:Block_Num
-    Symbols3(:,:,a)=H*Symbols(:,:,a)+(1/sqrt(2*SNR))*Noise(:,:,a);
+    Symbols3(:,:,a)=H*Symbols(:,:,a)+(1/sqrt(SNR))*Noise(:,:,a);
 end
 end
