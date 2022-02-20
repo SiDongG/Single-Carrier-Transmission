@@ -1,4 +1,4 @@
-function [Symbols3,H]=ZP_Channel(Symbols,N,Block_Num,L_C,SNR)
+function [Symbols3,H,h]=ZP_Channel(Symbols,N,Block_Num,L_C,SNR)
 h=(1/sqrt(2*(L_C+1)))*(randn(1,L_C+1)+1i*randn(1,L_C+1));
 %Generate the P by N toepliztz convolution matrix [H]p,n=h(p-n)
 nr=randn(N+L_C,1,Block_Num);
